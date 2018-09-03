@@ -1,7 +1,8 @@
 from datetime import date
 
-def age(yob):
-    
+def age():
+
+    yob = int(input('Please Enter your year of Birth:'))
     today= date.today().year
     age = today- yob
     if (age < 18):
@@ -11,7 +12,4 @@ def age(yob):
     else:
         print ('elder')
 
-
-if __name__ == '__main__':
-    yob = int(input('Please Enter your year of Birth:'))
-    age(yob)
+age()
